@@ -1,11 +1,8 @@
 var _$ = (function(){
-  // .cf_jsh || #ghd_sdk
+
   return function (target, col)
   {
-    
-    //var obj = new gray(_params);
     var obj = document.querySelector(target);
-
     return obj;
   };
 
@@ -15,8 +12,8 @@ var _$ = (function(){
 var session = false;
 const ENTER_KEY = 13, BACKSPACE_KEY = 8, DELETE_KEY = 46;
 
-const _root = "http://www.gccommunity.co/newsite/";
-const _root_parent = "http://www.gccommunity.co/";
+const _root = "http://www.site.co/child";
+const _root_parent = "http://www.site.co/";
 
 if(_$("#have_session")){
 	session = (_$("#have_session").value == 1) ? true : false;
@@ -42,24 +39,6 @@ isEdge = !isIE && !!window.StyleMedia;
 isChrome = !!window.chrome && !!window.chrome.webstore;
 // Blink engine detection
 isBlink = (isChrome || isOpera) && !!window.CSS;
-
-/* Results: */
-console.log("isOpera", isOpera);
-console.log("isFirefox", isFirefox);
-console.log("isSafari", isSafari);
-console.log("isIE", isIE);
-console.log("isEdge", isEdge);
-console.log("isChrome", isChrome);
-console.log("isBlink", isBlink);
-
-
-
-
-
-
-
-
-
 
 /*
  * Prototype : Contructor
@@ -104,9 +83,9 @@ var _ = (function(window, document){
 })(window, document);
 
 
-_("._sgn_ocup_js")._click( function(e){
+_(".cssClass")._click( function(e){
 	console.log(e.target)
 });
-_("._sgn_key")._click( function(e){
+_(".cssClass")._click( function(e){
 	console.log(e.target)
 });
